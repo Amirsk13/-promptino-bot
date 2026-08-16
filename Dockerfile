@@ -6,7 +6,7 @@ WORKDIR /app
 
 RUN pip install --no-cache-dir "Flask>=3.0,<4" "requests>=2.31,<3" "gunicorn>=22,<24"
 
-RUN cat > /app/main.py <<'PY'
+RUN cat > /app/main.py <<PY
 import os
 import json
 import base64
