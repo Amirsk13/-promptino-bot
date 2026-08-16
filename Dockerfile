@@ -469,3 +469,5 @@ if TOKEN and os.getenv("RENDER_EXTERNAL_URL"):
     webhook_url = os.getenv("RENDER_EXTERNAL_URL").rstrip("/") + "/webhook"
     result = api("setWebhook", {"url": webhook_url})
     print("Webhook:", result)
+PY    
+CMD ["sh", "-c", "gunicorn --bind 0.0.0.0:${PORT:-10000} main:app"]
