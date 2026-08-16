@@ -1,15 +1,13 @@
-PROMPTINO BOT - VERSION 1
+PROMPTINO BOT - RENDER WEBHOOK VERSION
 
-این نسخه فعلاً فقط:
-1) /start و پیام خوش‌آمدگویی
-2) دکمه ورود به کانال
-3) دریافت پرامپت با لینک عمیق مثل:
-   https://t.me/PromptinoPromptsBot?start=p001
+Environment Variable:
+BOT_TOKEN = توکن ربات از BotFather
 
-برای اضافه کردن پرامپت جدید، داخل bot.py به PROMPTS یک مورد جدید اضافه کن:
-"p002": "متن پرامپت ..."
+Render خودش RENDER_EXTERNAL_URL را فراهم می‌کند و برنامه webhook تلگرام را ثبت می‌کند.
 
-توکن ربات را داخل کد ننویس.
-آن را به‌صورت متغیر محیطی با نام BOT_TOKEN در سرویس میزبانی قرار بده.
+برای پرامپت جدید، داخل PROMPTS در app.py یک شناسه مثل p002 اضافه کن.
 
-نسخه اول عمداً ساده است تا بعداً بتوانیم VIP، جستجو، دیتابیس و امکانات دیگر را اضافه کنیم.
+مثال:
+https://t.me/PromptinoPromptsBot?start=p001
+
+توکن را داخل GitHub یا کد قرار نده.
